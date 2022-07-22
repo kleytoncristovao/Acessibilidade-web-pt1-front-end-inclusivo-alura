@@ -416,27 +416,30 @@
             </p>
 
             <div class="contatoCampo contatoCampo--sucesso">
-              <label>Nome: </label>
+              <label for="nome" id="nome">Nome: </label>
               <input
                 type="text"
                 class="contatoCampo--validouFoi"
                 value="Natan Souza"
+                placeholder="Nome..."
                 required
               />
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Email: </label>
-              <input type="email" class="contatoCampo--validouErro" required />
+              <label for="email" id="email">Email: </label>
+              <input type="email" class="contatoCampo--validouErro" 
+              placeholder="Email..."
+              required />
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Telefone: </label>
+              <label for="telefone" id="telefone">Telefone: </label>
               <input
-                type="text"
+                type="tel"
                 class="contatoCampo--validouErro"
                 placeholder="(11) 5571-2751"
               />
@@ -446,9 +449,9 @@
             </div>
 
             <div class="contatoCampo">
-              <label>CEP: </label>
+              <label for="cep" id="cep">CEP: </label>
               <input
-                type="text"
+                type="number"
                 maxlength="8"
                 placeholder="Exemplo: 04101-300"
                 required
@@ -456,47 +459,47 @@
             </div>
 
             <div class="contatoCampo">
-              <label>Endereço: </label>
+              <label for="endereço" id="endereço">Endereço: </label>
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Rua Vergueiro"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Bairro: </label>
+              <label for="bairro" id="bairro">Bairro: </label>
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Vila Mariana"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Cidade: </label>
+              <label for="cidade" id="cidade">Cidade: </label>
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="São Paulo"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Estado: </label>
+              <label for="estado" id="estado">Estado: </label>
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="SP"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Mensagem: </label>
+              <label for="mensagem" id="mensagem">Mensagem: </label>
               <textarea name="" cols="30" rows="10" required></textarea>
             </div>
 
